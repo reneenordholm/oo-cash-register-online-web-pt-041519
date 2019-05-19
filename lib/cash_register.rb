@@ -14,7 +14,7 @@ class CashRegister
     qty == nil ? self.total += price : self.total += price * qty
     end
     qty.times do
-      items << title
+      @items << title
     end
   end
   
@@ -28,6 +28,6 @@ class CashRegister
   end 
   
   def items
-    
+    @items
   end
 end
