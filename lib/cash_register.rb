@@ -26,6 +26,6 @@ class CashRegister
   def items
     add_item(qty).times do
       @items << title
+    end
   end
-
 end
