@@ -1,3 +1,5 @@
+require 'pry'
+
 class CashRegister
   
   attr_accessor :total, :discount, :items
@@ -22,7 +24,8 @@ class CashRegister
   end 
   
   def items
-    add_item.each { |title, price, qty| 
+    add_item.each { |title, price, qty| }
+    binding.pry
   end
 
 end
