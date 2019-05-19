@@ -24,7 +24,7 @@ class CashRegister
   end 
   
   def items
-    add_item.each { |title, price| }
+    add_item(title, price, qty = nil).each { |title, price, qty| }
     binding.pry
   end
 
