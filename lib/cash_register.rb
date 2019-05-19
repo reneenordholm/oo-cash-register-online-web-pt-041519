@@ -31,4 +31,3 @@ class CashRegister
     @items
   end
 end
-end
