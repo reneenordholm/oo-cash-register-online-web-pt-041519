@@ -12,10 +12,6 @@ class CashRegister
   
   def add_item(title, price, qty = nil)
     qty == nil ? self.total += price : self.total += price * qty
-
-    qty.times do
-      @items << title
-    end
   end
   
   def apply_discount
@@ -28,6 +24,6 @@ class CashRegister
   end 
   
   def items
-    @items
+  
   end
 end
