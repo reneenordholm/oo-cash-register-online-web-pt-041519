@@ -17,6 +17,8 @@ class CashRegister
     @cart << item_info
 
     @total += price * quantity
+    
+    self.last_transaction = price * quantity
 
   end
 
